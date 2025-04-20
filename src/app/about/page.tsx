@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { FaUsers, FaGlobeAmericas } from 'react-icons/fa';
+import Navbar from '../components/common/Navbar';
+import Footer from '../components/common/Footer';
 
 export default function AboutNetlify() {
   const [isClient, setIsClient] = useState(false);
@@ -14,22 +16,7 @@ export default function AboutNetlify() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-6 py-4 bg-white text-black">
-        <div className="flex items-center space-x-4">
-          <span className="text-xl font-bold text-[#00C7B7]">Private Server App</span>
-          <div className="hidden md:flex space-x-4">
-            <a href="#" className="hover:text-[#00C7B7]">Platform</a>
-            <a href="#" className="hover:text-[#00C7B7]">Features</a>
-            <a href="#" className="hover:text-[#00C7B7]">Pricing</a>
-            <a href="/About" className="hover:text-[#00C7B7]">About Us</a>
-          </div>
-        </div>
-        <div className="flex items-center space-x-4">
-          <a href="/contact" className="hover:underline">Contact</a>
-          <a href="#" className="hover:underline">Log in</a>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Sign up</button>
-        </div>
-      </nav>
+      <Navbar />
 
       <div className="px-6 md:px-20 py-16 space-y-24">
         <div className="max-w-6xl mx-auto">
@@ -138,6 +125,8 @@ export default function AboutNetlify() {
           </div>
         </div>
       </div>
+
+      <Footer/>
     </div>
   );
 }

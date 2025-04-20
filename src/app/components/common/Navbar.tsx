@@ -8,10 +8,10 @@ const Navbar = ()=>{
         <div className="flex items-center space-x-4">
           <span className="text-xl font-bold text-[#00C7B7]">Private Server App</span>
           <div className="hidden md:flex space-x-4">
-            <a href="#" className="hover:text-[#00C7B7]">Platform</a>
-            <a href="#" className="hover:text-[#00C7B7]">Features</a>
-            <a href="#" className="hover:text-[#00C7B7]">Pricing</a>
-            <a href="/About" className="hover:text-[#00C7B7]">About Us</a>
+            <a href="/platform" className="hover:text-[#00C7B7]">Platform</a>
+            <a href="/features" className="hover:text-[#00C7B7]">Features</a>
+            <a href="/pricing" className="hover:text-[#00C7B7]">Pricing</a>
+            <a href="/about" className="hover:text-[#00C7B7]">About Us</a>
           </div>
         </div>
         <div className="flex items-center space-x-4">

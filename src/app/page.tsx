@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
 
 const frameworks = [
   {
@@ -29,22 +31,7 @@ export default function Home() {
       </Head>
 
       
-      <nav className="flex items-center justify-between px-6 py-4 bg-white text-black">
-        <div className="flex items-center space-x-4">
-          <span className="text-xl font-bold text-[#00C7B7]">Private Server App</span>
-          <div className="hidden md:flex space-x-4">
-            <Link href="/plateform" className="hover:text-[#00C7B7]">Platform</Link>
-            <Link href="/Features" className="hover:text-[#00C7B7]">Features</Link>
-            <Link href="/Pricing" className="hover:text-[#00C7B7]">Pricing</Link>
-            <Link href="/About" className="hover:text-[#00C7B7]">About Us</Link>
-          </div>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Link href="/contact" className="hover:underline">Contact</Link>
-          <Link href="#" className="hover:underline">Log in</Link>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Sign up</button>
-        </div>
-      </nav>
+<Navbar/>
 
       
       <section className="flex flex-col items-center justify-center text-center px-4 py-20">
@@ -147,39 +134,7 @@ export default function Home() {
       </section>
 
       
-      <footer className="bg-gray-900 text-white">
-        <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div>
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="bg-indigo-500 rounded-full w-8 h-8 flex items-center justify-center">
-                <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-4 h-4 text-white">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </div>
-              <span className="text-lg font-semibold">Private Server App</span>
-            </div>
-            <p className="text-sm text-gray-400">Air plant banjo lyft occupy retro adaptogen indego</p>
-          </div>
-          {[...Array(4)].map((_, index) => (
-            <div key={index}>
-              <h2 className="text-sm font-semibold mb-3 uppercase">Categories</h2>
-              <ul className="space-y-2 text-gray-300">
-                <li><a href="#">First Link</a></li>
-                <li><a href="#">Second Link</a></li>
-                <li><a href="#">Third Link</a></li>
-                <li><a href="#">Fourth Link</a></li>
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        <div className="bg-gray-800 text-gray-400 text-sm py-4 px-4 flex flex-col md:flex-row justify-between items-center">
-          <p>© 2025 PS APP — @M Junaid</p>
-          <div className="flex space-x-4 mt-2 md:mt-0">
-            
-          </div>
-        </div>
-      </footer>
+   <Footer/>
     </div>
   );
 }

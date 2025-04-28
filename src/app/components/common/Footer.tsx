@@ -2,96 +2,111 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { TextField, IconButton } from '@mui/material';
+import { TextField, IconButton, Box } from '@mui/material';
 import { Twitter, Facebook, Instagram, Google, YouTube, Email } from '@mui/icons-material';
 
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#fff', padding: '40px 20px', borderTop: '1px solid #e0e0e0', marginTop: '50px' }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', maxWidth: '1200px', margin: 'auto' }}>
-        
+      <Box
+        sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
+          gap: 4,
+          maxWidth: '1200px',
+          margin: 'auto',
+        }}
+      >
         {/* Section 1 */}
-        <div style={{ flex: '1', minWidth: '200px', marginBottom: '20px' }}>
-          <h4>Material Kit PRO</h4>
+        <Box sx={{ flex: '1 1 200px', minWidth: '200px' }}>
+          <h4>Private Server App</h4>
           <p style={{ color: '#999', lineHeight: 1.5 }}>
-            Probably the best UI Kit in the world! We know you've been waiting for it, so don't be shy!
+            Probably the best Private Server Platform! We know you've been waiting for it, so don't be shy!
           </p>
-        </div>
+        </Box>
 
         {/* Section 2 */}
-        <div style={{ flex: '1', minWidth: '120px', marginBottom: '20px' }}>
+        <Box sx={{ flex: '1 1 120px', minWidth: '120px' }}>
           <h4>About</h4>
           <ul style={{ listStyle: 'none', padding: 0 }}>
-            <li><Link href="#">Blog</Link></li>
-            <li><Link href="#">About Us</Link></li>
-            <li><Link href="#">Presentation</Link></li>
-            <li><Link href="#">Contact Us</Link></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="/presentation">Presentation</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
           </ul>
-        </div>
+        </Box>
 
         {/* Section 3 */}
-        <div style={{ flex: '1', minWidth: '120px', marginBottom: '20px' }}>
+        <Box sx={{ flex: '1 1 120px', minWidth: '120px' }}>
           <h4>Market</h4>
           <ul style={{ listStyle: 'none', padding: 0 }}>
-            <li><Link href="#">Sales FAQ</Link></li>
-            <li><Link href="#">How to Register</Link></li>
-            <li><Link href="#">Sell Goods</Link></li>
-            <li><Link href="#">Receive Payment</Link></li>
-            <li><Link href="#">Transactions Issues</Link></li>
+            <li><Link href="/sales-faq">Sales FAQ</Link></li>
+            <li><Link href="/register">How to Register</Link></li>
+            <li><Link href="/sell-goods">Sell Goods</Link></li>
+            <li><Link href="/receive-payment">Receive Payment</Link></li>
+            <li><Link href="/transaction-issues">Transactions Issues</Link></li>
           </ul>
-        </div>
+        </Box>
 
         {/* Section 4 */}
-        <div style={{ flex: '1', minWidth: '120px', marginBottom: '20px' }}>
+        <Box sx={{ flex: '1 1 120px', minWidth: '120px' }}>
           <h4>Legal</h4>
           <ul style={{ listStyle: 'none', padding: 0 }}>
-            <li><Link href="#">Transactions FAQ</Link></li>
-            <li><Link href="#">Terms & Conditions</Link></li>
-            <li><Link href="#">Licenses</Link></li>
+            <li><Link href="/transactions-faq">Transactions FAQ</Link></li>
+            <li><Link href="/terms">Terms & Conditions</Link></li>
+            <li><Link href="/licenses">Licenses</Link></li>
           </ul>
-        </div>
+        </Box>
 
         {/* Section 5 */}
-        <div style={{ flex: '1', minWidth: '250px', marginBottom: '20px' }}>
+        <Box sx={{ flex: '1 1 250px', minWidth: '250px' }}>
           <h4>Subscribe to Newsletter</h4>
           <p style={{ color: '#999', lineHeight: 1.5 }}>
-            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about that.
           </p>
-          <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
             <TextField
               variant="standard"
               placeholder="Your Email..."
               InputProps={{
                 disableUnderline: true,
-                style: { borderBottom: '1px solid #ccc', flex: 1 },
+                sx: { borderBottom: '1px solid #ccc', flex: 1 },
               }}
             />
             <IconButton sx={{ backgroundColor: '#9c27b0', color: '#fff', marginLeft: '8px' }}>
               <Email />
             </IconButton>
-          </div>
-        </div>
-
-      </div>
+          </Box>
+        </Box>
+      </Box>
 
       {/* Divider */}
-      <div style={{ borderTop: '1px solid #e0e0e0', margin: '30px 0' }} />
+      <Box sx={{ borderTop: '1px solid #e0e0e0', margin: '30px 0' }} />
 
       {/* Bottom Social Links */}
-      <div style={{ textAlign: 'center', paddingBottom: '20px' }}>
-        <IconButton href="#" size="large"><Twitter sx={{ color: '#55acee' }} /></IconButton>
-        <IconButton href="#" size="large"><Facebook sx={{ color: '#3b5998' }} /></IconButton>
-        <IconButton href="#" size="large"><Instagram sx={{ color: '#ea4c89' }} /></IconButton>
-        <IconButton href="#" size="large"><Google sx={{ color: '#dd4b39' }} /></IconButton>
-        <IconButton href="#" size="large"><YouTube sx={{ color: '#ff0000' }} /></IconButton>
-      </div>
+      <Box sx={{ textAlign: 'center', paddingBottom: '20px', display: 'flex', justifyContent: 'center', gap: 2, flexWrap: 'wrap' }}>
+        <Link href="https://twitter.com" passHref legacyBehavior>
+          <IconButton component="a" target="_blank"><Twitter sx={{ color: '#55acee' }} /></IconButton>
+        </Link>
+        <Link href="https://facebook.com" passHref legacyBehavior>
+          <IconButton component="a" target="_blank"><Facebook sx={{ color: '#3b5998' }} /></IconButton>
+        </Link>
+        <Link href="https://instagram.com" passHref legacyBehavior>
+          <IconButton component="a" target="_blank"><Instagram sx={{ color: '#ea4c89' }} /></IconButton>
+        </Link>
+        <Link href="https://google.com" passHref legacyBehavior>
+          <IconButton component="a" target="_blank"><Google sx={{ color: '#dd4b39' }} /></IconButton>
+        </Link>
+        <Link href="https://youtube.com" passHref legacyBehavior>
+          <IconButton component="a" target="_blank"><YouTube sx={{ color: '#ff0000' }} /></IconButton>
+        </Link>
+      </Box>
 
       {/* Copyright */}
-      <div style={{ textAlign: 'center', color: '#999', fontSize: '14px', marginTop: '10px' }}>
-        Copyright © {new Date().getFullYear()} <span style={{ color: '#9c27b0' }}>Creative Tim</span> All Rights Reserved.
-      </div>
-
+      <Box sx={{ textAlign: 'center', color: '#999', fontSize: '14px', marginTop: '10px' }}>
+        © {new Date().getFullYear()} <span style={{ color: '#9c27b0' }}>Private Server App</span>. All Rights Reserved.
+      </Box>
     </footer>
   );
 }
-

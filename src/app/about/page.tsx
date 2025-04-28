@@ -6,7 +6,7 @@ import { FaUsers, FaGlobeAmericas } from 'react-icons/fa';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 
-export default function AboutNetlify() {
+export default function AboutPrivateServerApp () {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -29,8 +29,8 @@ export default function AboutNetlify() {
           <div className="w-full md:w-1/2">
             <div className="rounded-full overflow-hidden w-full aspect-square shadow-xl">
               <Image
-                src="/netlify-team.jpg"
-                alt="Netlify team"
+                src="/private server team.jpg"
+                alt="Private Server App team"
                 width={500}
                 height={500}
                 className="object-cover w-full h-full"
@@ -42,16 +42,16 @@ export default function AboutNetlify() {
           <div className="w-full md:w-1/2 space-y-6">
             <h2 className="text-3xl font-semibold">We want the web to win</h2>
             <p>
-              Netlify is the platform developers love for building highly-performant and dynamic websites, e-commerce stores and web applications.
+            Private Server App is the platform developers love for building highly-performant and dynamic websites, e-commerce stores and web applications.
             </p>
             <p>
-              By uniting an extensive ecosystem of technologies, services and APIs into one workflow, Netlify unlocks new levels of team productivity, while saving time and money.
+              By uniting an extensive ecosystem of technologies, services and APIs into one workflow, Private Server App unlocks new levels of team productivity, while saving time and money.
             </p>
             <p>
-              Our bet on <a href="#" className="text-blue-600 underline">Jamstack</a> is quickly coming true. The web is rapidly changing away from monolithic to decoupled apps, and web developers are storming ahead with more power than ever. Netlify is built to cater to that movement, and in just a few years we’ve on-boarded millions of developers and businesses, and are building and serving millions of web projects daily around the globe.
+              Our bet on <a href="#" className="text-blue-600 underline">Jamstack</a> is quickly coming true. The web is rapidly changing away from monolithic to decoupled apps, and web developers are storming ahead with more power than ever. Private Server App is built to cater to that movement, and in just a few years we’ve on-boarded millions of developers and businesses, and are building and serving millions of web projects daily around the globe.
             </p>
             <p>
-              Fun fact: An estimated 16% of the internet population visits a website or web app on Netlify each month.
+              Fun fact: An estimated 16% of the internet population visits a website or web app on Private Server App each month.
             </p>
           </div>
         </div>
@@ -62,13 +62,13 @@ export default function AboutNetlify() {
             <div className="md:w-2/3 space-y-4">
               <h2 className="text-3xl font-semibold">A company is as good as its team</h2>
               <p>
-                At Netlify, we have a distributed culture rather than just being "remote-friendly." Simply put, we strive to be a workplace where you can work from home and have an equal opportunity to influence decisions and culture across the organization. We tackle complex problems, in a remote-first environment while caring deeply about what we do and having fun.
+                At Private Server App, we have a distributed culture rather than just being "remote-friendly." Simply put, we strive to be a workplace where you can work from home and have an equal opportunity to influence decisions and culture across the organization. We tackle complex problems, in a remote-first environment while caring deeply about what we do and having fun.
               </p>
             </div>
             <div className="md:w-1/3 rounded-xl overflow-hidden shadow-xl">
               <Image
-                src="/netlify-video-call.jpg"
-                alt="Netlify video call"
+                src="/psa team.jpg"
+                alt="Private Server App video call"
                 width={400}
                 height={300}
                 className="w-full h-auto object-cover"
@@ -95,7 +95,7 @@ export default function AboutNetlify() {
                 <span>Distribution</span>
               </div>
               <p>
-                Netlify is a distributed company. We work remotely and bring team members together on occasion around the world and in our home base in San Francisco. We’ve structured Netlify to support this and we pride ourselves on having a distributed culture.
+              Private Server App is a distributed company. We work remotely and bring team members together on occasion around the world and in our home base in San Francisco. We’ve structured Private Server App to support this and we pride ourselves on having a distributed culture.
               </p>
               <a href="#" className="font-semibold underline hover:text-blue-600">Read more about the things we do to support it →</a>
             </div>
@@ -106,8 +106,8 @@ export default function AboutNetlify() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2 rounded-[50%] overflow-hidden shadow-xl">
             <Image
-              src="/netlify-careers.jpg"
-              alt="Netlify careers meeting"
+              src="/psa career.jpg"
+              alt="Private Server App careers meeting"
               width={500}
               height={500}
               className="object-cover w-full h-full"

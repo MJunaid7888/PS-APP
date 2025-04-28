@@ -7,11 +7,11 @@ import Footer from './components/common/Footer';
 const frameworks = [
   {
     name: "Astro",
-    imgSrc: "https://astro.build/assets/brand/logo.svg",
+    imgSrc: "\astro-logo-dark.png",
   },
   {
     name: "TanStack",
-    imgSrc: "https://tanstack.com/logo.svg",
+    imgSrc: "\logo-color-100w-br5_Ikqp.png",
   },
   {
     name: "Next.JS",
@@ -19,7 +19,7 @@ const frameworks = [
   },
   {
     name: "Remix",
-    imgSrc: "https://remix.run/images/logo-light.svg",
+    imgSrc: "\download-removebg-preview.png",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0b0d17] text-white">
       <Head>
-        <title>Private Server App</title>
+      <a href="/page" className="hover:text-[#00C7B7]"><title>Private Server App</title></a>
       </Head>
 
       
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="px-4 py-16 flex justify-center bg-[#0b0d17]">
         <div className="max-w-5xl w-full rounded-xl overflow-hidden border border-[#00C7B7] shadow-xl">
           <Image 
-            src="/dashboard-preview.png" 
+            src="/dashboard-preview.png.jpg" 
             alt="Dashboard Preview" 
             width={1200} 
             height={500} 

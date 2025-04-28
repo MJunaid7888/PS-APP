@@ -11,9 +11,9 @@ export default function ContactSalesPage() {
 
       <div className="bg-gradient-to-r from-blue-600 to-blue-400 flex flex-col md:flex-row justify-center items-center p-6 gap-6">
         <div className="max-w-md text-white">
-          <h2 className="text-lg font-bold mb-2">Ready to deploy with Netlify?</h2>
+          <h2 className="text-lg font-bold mb-2">Ready to deploy with Private Server App?</h2>
           <p className="mb-4 text-sm">
-            Learn how to scale your company effortlessly with the Netlify Composable Web Platform or get a demo to see it in action.
+            Learn how to scale your company effortlessly with the Private Server App Composable Web Platform or get a demo to see it in action.
           </p>
           <p className="mb-6 text-sm">
             Please enter your information, and we'll get back to you as soon as possible.
@@ -56,9 +56,9 @@ export default function ContactSalesPage() {
               <textarea className="w-full border px-3 py-2 rounded-md" rows={4} required></textarea>
             </div>
             <p className="text-xs text-gray-500">
-              By submitting this form, you agree to Netlify’s <a href="#" className="underline">Privacy Policy</a>, and that Netlify can send you communications about its products and services.
+              By submitting this form, you agree to Private Server App’s <a href="#" className="underline">Privacy Policy</a>, and that Private Server App can send you communications about its products and services.
             </p>
-            <button type="submit" className="bg-cyan-400 text-white hover:bg-cyan-500 px-4 py-2 rounded-md">Talk to Netlify</button>
+            <button type="submit" className="bg-cyan-400 text-white hover:bg-cyan-500 px-4 py-2 rounded-md">Talk to Private Server App</button>
           </form>
         </div>
       </div>

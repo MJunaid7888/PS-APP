@@ -12,7 +12,7 @@ export default function WebPlatformPage() {
       {/* Web Stack Management Section */}
       <section className="bg-[#1E1EF0] text-white py-20 text-center flex-grow">
         <div className="max-w-4xl mx-auto px-4">
-          <img src="/logo.svg" alt="logo" className="mx-auto mb-4 w-6" />
+          <img src="/images__3_-removebg-preview.png" alt="logo" className="mx-auto mb-4 w-6" />
           <h1 className="text-4xl font-extrabold mb-4 tracking-tight">A single platform to manage any web stack</h1>
           <p className="text-base md:text-lg mb-10 text-gray-200">
             Built for Architects, Developers, and Marketers, the Netlify Composable Web Platform is supported by the world-class Netlify Partner Ecosystem, Enterprise services, and Enterprise-grade security.

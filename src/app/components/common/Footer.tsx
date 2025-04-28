@@ -1,47 +1,97 @@
+'use client';
 
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
+import { TextField, IconButton } from '@mui/material';
+import { Twitter, Facebook, Instagram, Google, YouTube, Email } from '@mui/icons-material';
 
-const Footer = ()=>{
-
-    return (
-        <footer className="bg-gray-900 text-white">
-        <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div>
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="bg-indigo-500 rounded-full w-8 h-8 flex items-center justify-center">
-                <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-4 h-4 text-white">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </div>
-              <span className="text-lg font-semibold">Private Server App</span>
-            </div>
-            <p className="text-sm text-gray-400">Air plant banjo lyft occupy retro adaptogen indego</p>
-          </div>
-
-          {[...Array(4)].map((_, index) => (
-            <div key={index}>
-              <h2 className="text-sm font-semibold mb-3 uppercase">Categories</h2>
-              <ul className="space-y-2 text-gray-300">
-                <li><a href="#">First Link</a></li>
-                <li><a href="#">Second Link</a></li>
-                <li><a href="#">Third Link</a></li>
-                <li><a href="#">Fourth Link</a></li>
-              </ul>
-            </div>
-          ))}
+export default function Footer() {
+  return (
+    <footer style={{ backgroundColor: '#fff', padding: '40px 20px', borderTop: '1px solid #e0e0e0', marginTop: '50px' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', maxWidth: '1200px', margin: 'auto' }}>
+        
+        {/* Section 1 */}
+        <div style={{ flex: '1', minWidth: '200px', marginBottom: '20px' }}>
+          <h4>Material Kit PRO</h4>
+          <p style={{ color: '#999', lineHeight: 1.5 }}>
+            Probably the best UI Kit in the world! We know you've been waiting for it, so don't be shy!
+          </p>
         </div>
 
-        <div className="bg-gray-800 text-gray-400 text-sm py-4 px-4 flex flex-col md:flex-row justify-between items-center">
-          <p>© 2025 PS APP — @M Junaid</p>
-          <div className="flex space-x-4 mt-2 md:mt-0">
-            <a href="#"><svg fill="currentColor" className="w-4 h-4" viewBox="0 0 24 24"><path d="M18 2h-3a6 6 0 0 0-6 6v3H6v4h3v8h4v-8h3l1-4h-4V8a2 2 0 0 1 2-2h2z" /></svg></a>
-            <a href="#"><svg fill="currentColor" className="w-4 h-4" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a>
-            <a href="#"><svg fill="currentColor" className="w-4 h-4" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" /><path d="M22 12a9.94 9.94 0 0 0-.2-2H2.2a9.94 9.94 0 0 0 0 4h19.6a9.94 9.94 0 0 0 .2-2z" /></svg></a>
-            <a href="#"><svg fill="currentColor" className="w-4 h-4" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 0 8m-8 0a6 6 0 0 1 0-8m-3.22 3.78A6 6 0 0 1 6 12m12 0a6 6 0 0 1-1.78 3.78" /></svg></a>
+        {/* Section 2 */}
+        <div style={{ flex: '1', minWidth: '120px', marginBottom: '20px' }}>
+          <h4>About</h4>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li><Link href="#">Blog</Link></li>
+            <li><Link href="#">About Us</Link></li>
+            <li><Link href="#">Presentation</Link></li>
+            <li><Link href="#">Contact Us</Link></li>
+          </ul>
+        </div>
+
+        {/* Section 3 */}
+        <div style={{ flex: '1', minWidth: '120px', marginBottom: '20px' }}>
+          <h4>Market</h4>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li><Link href="#">Sales FAQ</Link></li>
+            <li><Link href="#">How to Register</Link></li>
+            <li><Link href="#">Sell Goods</Link></li>
+            <li><Link href="#">Receive Payment</Link></li>
+            <li><Link href="#">Transactions Issues</Link></li>
+          </ul>
+        </div>
+
+        {/* Section 4 */}
+        <div style={{ flex: '1', minWidth: '120px', marginBottom: '20px' }}>
+          <h4>Legal</h4>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li><Link href="#">Transactions FAQ</Link></li>
+            <li><Link href="#">Terms & Conditions</Link></li>
+            <li><Link href="#">Licenses</Link></li>
+          </ul>
+        </div>
+
+        {/* Section 5 */}
+        <div style={{ flex: '1', minWidth: '250px', marginBottom: '20px' }}>
+          <h4>Subscribe to Newsletter</h4>
+          <p style={{ color: '#999', lineHeight: 1.5 }}>
+            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
+            <TextField
+              variant="standard"
+              placeholder="Your Email..."
+              InputProps={{
+                disableUnderline: true,
+                style: { borderBottom: '1px solid #ccc', flex: 1 },
+              }}
+            />
+            <IconButton sx={{ backgroundColor: '#9c27b0', color: '#fff', marginLeft: '8px' }}>
+              <Email />
+            </IconButton>
           </div>
         </div>
-      </footer>
-    )
+
+      </div>
+
+      {/* Divider */}
+      <div style={{ borderTop: '1px solid #e0e0e0', margin: '30px 0' }} />
+
+      {/* Bottom Social Links */}
+      <div style={{ textAlign: 'center', paddingBottom: '20px' }}>
+        <IconButton href="#" size="large"><Twitter sx={{ color: '#55acee' }} /></IconButton>
+        <IconButton href="#" size="large"><Facebook sx={{ color: '#3b5998' }} /></IconButton>
+        <IconButton href="#" size="large"><Instagram sx={{ color: '#ea4c89' }} /></IconButton>
+        <IconButton href="#" size="large"><Google sx={{ color: '#dd4b39' }} /></IconButton>
+        <IconButton href="#" size="large"><YouTube sx={{ color: '#ff0000' }} /></IconButton>
+      </div>
+
+      {/* Copyright */}
+      <div style={{ textAlign: 'center', color: '#999', fontSize: '14px', marginTop: '10px' }}>
+        Copyright © {new Date().getFullYear()} <span style={{ color: '#9c27b0' }}>Creative Tim</span> All Rights Reserved.
+      </div>
+
+    </footer>
+  );
 }
 
-export default Footer;
